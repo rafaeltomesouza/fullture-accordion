@@ -2,7 +2,7 @@
   "name": "fullture-accordion",
   "description": "Accordion",
   "version": "1.0.1",
-  "private": true,
+  "private": false,
   "main": "src/Accordion.js",
   "bin": "dist/accordion.bundle.js",
   "dependencies": {
