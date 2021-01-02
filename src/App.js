@@ -1,5 +1,5 @@
 import React from 'react';
-import { Accordion } from './Accordion';
+import { Accordion } from './component/Accordion';
 import { listActitvies } from './mock';
 
 function App() {
