@@ -4,7 +4,7 @@ import { DefinitionWrapper, DL, DT, DD, IconOpen } from './styles';
 import { useAccordion } from './hooks/useAccordion';
 import PropTypes from 'prop-types';
 
-function Accordion({ listActitvies }) {
+export const Accordion = ({ listActitvies }) => {
 
   const { listActivity, open, onOpen } = useAccordion();
 
@@ -42,8 +42,6 @@ function Accordion({ listActitvies }) {
     </DefinitionWrapper>
   );
 }
-
-export { Accordion };
 
 Accordion.propTypes = {
   listActitvies: PropTypes.array.isRequired

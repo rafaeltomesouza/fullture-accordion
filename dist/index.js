@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Accordion = Accordion;
+exports.Accordion = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
@@ -19,7 +19,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
-function Accordion(_ref) {
+var Accordion = function Accordion(_ref) {
   var listActitvies = _ref.listActitvies;
 
   var _useAccordion = (0, _useAccordion2.useAccordion)(),
@@ -49,8 +49,9 @@ function Accordion(_ref) {
       open: shouldOpen
     }), activity.definition));
   })));
-}
+};
 
+exports.Accordion = Accordion;
 Accordion.propTypes = {
   listActitvies: _propTypes.default.array.isRequired
 };

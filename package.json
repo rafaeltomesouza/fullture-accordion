@@ -3,8 +3,6 @@
   "description": "Accordion",
   "version": "1.0.2",
   "private": false,
-  "main": "src/Accordion.js",
-  "bin": "dist/Accordion.js",
   "dependencies": {
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
