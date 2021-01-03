@@ -1,7 +1,7 @@
 {
   "name": "fullture-accordion",
   "description": "Accordion",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "private": false,
   "main": "dist/index.js",
   "dependencies": {
