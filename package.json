@@ -1,7 +1,7 @@
 {
   "name": "fullture-accordion",
   "description": "Accordion",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "private": false,
   "main": "dist/index.js",
   "dependencies": {
@@ -10,7 +10,7 @@
   "peerDependencies": {
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-scripts": "4.0.1"
+    "styled-components": "^5.2.1"
   },
   "keywords": [
     "fullture",
