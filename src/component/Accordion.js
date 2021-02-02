@@ -3,15 +3,15 @@ import { ACCORDION_TERM, ACCORDION_DEFINITION } from './constant';
 import { useAccordion } from './hooks/useAccordion';
 import PropTypes from 'prop-types';
 
-const Accordion = ({ listActitvies, style, platform }) => {
+const Accordion = ({ listActitvies, style }) => {
 
-  const { listActivity, open, onOpen } = useAccordion({ platform });
+  const { listActivity, open, onOpen } = useAccordion();
 
-  const device = style;
+  const styleComponent = style;
 
   return (
-    <device.DefinitionWrapper>
-      <device.DL ref={listActivity}>
+    <styleComponent.DefinitionWrapper>
+      <styleComponent.DL ref={listActivity}>
         {
           listActitvies.map((activity, position) => {
             const idTerm = `${ACCORDION_TERM}${position}`;
@@ -22,33 +22,32 @@ const Accordion = ({ listActitvies, style, platform }) => {
             };
             return (
               <>
-                <device.DT
+                <styleComponent.DT
                   id={idTerm}
                   key={position}
                   onPress={onOpen(idTerm)}
                   onClick={onOpen(idTerm)}
                   tabIndex="0">
-                  <device.IconOpen open={shouldOpen} /><device.DText>{activity.term}</device.DText>
-                </device.DT>
-                <device.DD
+                  <styleComponent.IconOpen open={shouldOpen} /><styleComponent.DText>{activity.term}</styleComponent.DText>
+                </styleComponent.DT>
+                <styleComponent.DD
                   id={idDefinition}
                   {...propsDD}
                   open={shouldOpen}>
                   {activity.definition}
-                </device.DD>
+                </styleComponent.DD>
               </>
             )
           })
         }
-      </device.DL>
-    </device.DefinitionWrapper>
+      </styleComponent.DL>
+    </styleComponent.DefinitionWrapper>
   );
 }
 
 Accordion.propTypes = {
   listActitvies: PropTypes.array.isRequired,
   style: PropTypes.any.isRequired,
-  platform: PropTypes.string.isRequired
 }
 
 export default Accordion;
